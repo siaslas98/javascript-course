@@ -1,0 +1,1 @@
+- onclick attribute applied to an html element allows executing js code.
