@@ -1,1 +1,4 @@
 - onclick attribute applied to an html element allows executing js code.
+- === and == whats the difference ? == tries to convert both values to the same type.
+-  The same is true with !== and != .
+- use const by default for variables and let if going to change value later.
