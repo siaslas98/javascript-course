@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Objects
+    </title>
+  </head>
+  <body>
+    <script>
+      /*
+      const product = {
+        name: 'socks',
+        price: 1090
+      };
+
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+
+      product.name = 'cotton socks';
+      console.log(product);
+
+      product.newProperty = true;
+      console.log(product);
+
+      delete product.newProperty;
+      console.log(product);
+
+      console.log(typeof product);
+      */
+
+      // objects makes code more organized
+
+      /*
+      const product2 = {
+        name: 'shirt',
+        ['delivery-time']: '1 day',
+        'delivery-date': 'Monday',
+        rating: { // nested objects
+          stars: 4.5,
+          count: 87
+        },
+        fun: function function1() { // functions are also values, within objects, they are methods
+          console.log('function inside object');
+        }
+      };
+
+      console.log(product2);
+      console.log(product2['name']);
+      console.log(product2['delivery-time']);
+      console.log(product2['delivery-date']);
+      console.log(product2.rating.stars);
+      product2.fun();
+
+      console.log(typeof console);
+
+      const jsonString = JSON.stringify(product2); // js object -> json string
+      console.log(JSON.parse(jsonString)); // json string -> js object
+      */
+
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase()); // auto boxing in js where string 'hello' is wrapped in special object
+
+      //objects are references
+
+      const object1 = {
+        message: 'hello'
+      };
+
+      const object2 = object1; // This is a copying by reference
+      object1.message = 'Good job!';
+      console.log(object1);
+      console.log(object2);
+
+      // can't compare objects directly
+      const object3 = {
+        message: 'Good job!'
+      };
+
+      console.log(object3 === object1); // reference comparison
+      console.log(object2 === object1);
+      
+      const object4 = {
+        message: 'Good job!',
+        price: 7.99
+      };
+
+      // const message = object4.message; -> destructuring 
+      const { message, price } = object4;
+      console.log(message);
+      console.log(price);
+
+      const object5 = {
+        // message: message
+        message,
+        // method: function function1(){
+        //   console.log('method');
+        // },
+        // function name is actually not needed ^ 
+        // Below is the shorthand method syntax
+        method() {
+          console.log('method');
+        }
+      };
+
+      console.log(object5);
+      object5.method();
+
+    </script>
+  </body>
+</html>

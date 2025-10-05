@@ -3,3 +3,5 @@
 -  The same is true with !== and != .
 - use const by default for variables and let if going to change value later.
 - var was also used previously, but it doesn't follow scope rules and can cause naming conflicts.
+- an object groups multiple values together.
+- JSON(Javascript Object Notation) and localStorage are built-in objects.
