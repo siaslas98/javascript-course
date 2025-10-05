@@ -2,3 +2,4 @@
 - === and == whats the difference ? == tries to convert both values to the same type.
 -  The same is true with !== and != .
 - use const by default for variables and let if going to change value later.
+- var was also used previously, but it doesn't follow scope rules and can cause naming conflicts.
