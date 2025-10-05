@@ -5,3 +5,4 @@
 - var was also used previously, but it doesn't follow scope rules and can cause naming conflicts.
 - an object groups multiple values together.
 - JSON(Javascript Object Notation) and localStorage are built-in objects.
+- In JSON, all properties and strings must use double quotes. It does not support functions.

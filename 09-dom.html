@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      DOM
+    </title>
+  </head>
+  <body>
+    <button>hello</button>
+    <button class="js-button">Second button</button>
+
+  
+    <script>
+      console.log(document.querySelector('button').innerHTML); // Gets the first button
+      document.querySelector('button')
+        .innerHTML = 'changed';
+      const buttonElement = document.querySelector('.js-button');
+      console.log(buttonElement);
+
+      /*
+      console.log(document.title);
+      console.log(document.body);
+      */
+
+      /*
+     document.body.innerHTML = 'hello'; // document object and the webpage are linked together it is sort of like a model of the webpage
+     document.title = 'Good job!';
+     */
+
+      //document.body.innerHTML = '<button>Good job!</button>';
+
+    </script>
+  </body>
+</html>
